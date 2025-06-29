@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="page1">
+        <div class="img-box">
+            <img src="./img/Do_you_love_me.PNG" alt="Do you love me?">
+        </div>
+        <h1>Do you love me?</h1>
+        <button class="btn yes-btn" onclick="goToLoading()">Yes</button>
+        <button class="btn no-btn" id="noBtn">No</button>
+    </div>
+
+    <div class="container" id="loadingPage" style="display: none;">
+        <div class="loading">❤️</div>
+    </div>
+
+    <div class="container" id="resultPage" style="display: none;">
+        <div class="img-box">
+            <img src="./img/I_knew_it.PNG" alt="I knew it!">
+        </div>
+        <h1>I knew it !</h1>
+        <button class="btn yes-btn" onclick="goBack()">Quay lại</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+    position: relative;
+}
+
+.img-box img {
+    width: 500px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+.btn {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.yes-btn {
+    background-color: red;
+    color: white;
+}
+
+.no-btn {
+    background-color: red;
+    color: white;
+}
+
+.loading {
+    font-size: 50px;
+}
