@@ -13,7 +13,6 @@ function goToLoading() {
     }, 2000);
 }
 
-
 // Button No chạy khắp màn hình
 const noBtn = document.getElementById("noBtn");
 const page1 = document.getElementById("page1");
@@ -34,11 +33,22 @@ noBtn.addEventListener("mouseenter", () => {
     noBtn.style.top = Math.random() * maxY + "px";
 });
 
-// Hàm xử lý nút quay lại
+// Hàm xử lý khi người dùng bấm nút "Quay lại"
 function goBack() {
     // Ẩn trang kết quả
     document.getElementById('resultPage').style.display = 'none';
+    // Ẩn trang loading nếu đang hiển thị
+    document.getElementById('loadingPage').style.display = 'none';
     // Hiện lại trang câu hỏi ban đầu
     document.getElementById('page1').style.display = 'block';
+
+    const noBtn = document.getElementById('noBtn');
+    // Đặt lại vị trí nút "No" về góc trái trên (vị trí gốc)
+    noBtn.style.left = '0';
+    noBtn.style.top = '0';
+
+    // Đổi position về "relative" để nút trở về layout bình thường
+    noBtn.style.position = 'relative';
 }
+
 

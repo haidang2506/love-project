@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -39,6 +43,13 @@ h1 {
     color: white;
 }
 
+#loadingPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .loading {
-    font-size: 50px;
+    font-size: 100px;
+    margin-top: 350px;
 }
